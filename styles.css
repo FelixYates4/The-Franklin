@@ -1,4 +1,3 @@
-/* Basic Reset */
 * {
   margin: 0;
   padding: 0;
@@ -6,7 +5,7 @@
 }
 
 html {
-  scroll-padding-top: 120px; /* Adjust this value to match your header's height */
+  scroll-padding-top: 120px; 
 }
 
 a {
@@ -15,29 +14,26 @@ a {
 }
 
 sub {
-  font-size: 10px; /* Change to desired size */
+  font-size: 10px;
 }
 
-/* Color Variables */
 :root {
-  --navy: #102040;       /* Updated shade of navy */
-  --pink: #ff7eb5;       /* pink accent */
-  --white: #ffffff;      /* white */
-  --text-color: #ffffff; /* main text color */
+  --navy: #102040;       
+  --pink: #ff7eb5;       
+  --white: #ffffff;     
+  --text-color: #ffffff;
   --font-main: 'Montserrat', sans-serif;
 }
 
-/* Body and Overall Layout */
 body {
   font-family: var(--font-main);
   background-color: var(--navy);
   color: var(--text-color);
   line-height: 1.6;
   margin: 0;
-  padding-top: 100px; /* To prevent content from being hidden under fixed header */
+  padding-top: 100px; 
 }
 
-/* Header Section */
 header {
   position: fixed;
   top: 0;
@@ -57,7 +53,7 @@ header .logo {
 }
 
 .title-container {
-  flex: 1; /* Take up remaining space to center the title */
+  flex: 1; 
   text-align: center;
 }
 
@@ -79,7 +75,6 @@ header .logo {
   font-style: italic;
 }
 
-/* Menu Button on the right, now white */
 .menu-btn {
   background: url('images/menu-icon.png') no-repeat center;
   background-size: cover;
@@ -87,12 +82,10 @@ header .logo {
   width: 40px;
   height: 40px;
   cursor: pointer;
-  /* If the icon isn't white, use a filter. Adjust as needed: */
   filter: invert(100%) brightness(200%);
   margin-left: 1rem;
 }
 
-/* Navigation Menu (Dropdown) */
 nav.menu {
   position: absolute;
   top: 101%;
@@ -102,7 +95,7 @@ nav.menu {
   padding: 1rem;
   display: none;
   flex-direction: column;
-  border: 2px solid var(--pink); /* Add this line */
+  border: 2px solid var(--pink);
 }
 
 
@@ -118,12 +111,10 @@ nav.menu a:hover {
   color: var(--pink);
 }
 
-/* Show/Hide menu when toggled (Handled by JavaScript) */
 .menu-open .menu {
   display: flex;
 }
 
-/* Main Content */
 main {
   padding: 2rem;
   max-width: 1200px;
@@ -136,25 +127,21 @@ main {
   gap: 2rem;
 }
 
-/* About Section */
 .about {
   border: 2px solid var(--pink);
   padding: 2rem;
   background: rgba(255,255,255,0.05);
-  /* Remove display:flex to allow normal document flow wrapping */
-  /* display: flex; */
-  /* gap: 2rem; */
 }
 
 
 .about-img img {
-  max-width: 600px; /* Increase size */
+  max-width: 600px;
   width: 100%;
   border: 3px solid var(--pink);
   display: block;
-  float: left; /* Float the image to the left */
-  margin-right: 1.5rem; /* Add space between image and text */
-  margin-bottom: 1rem; /* Ensure spacing below if text is shorter */
+  float: left; 
+  margin-right: 1.5rem; 
+  margin-bottom: 1rem; 
 }
 
 
@@ -168,15 +155,13 @@ main {
 
 .about-txt p {
   color: var(--white);
-  /* No special wrap styling needed; text will wrap around floated image */
 }
 
 
-/* Articles Section */
   .articles {
     display: flex;
-    flex-direction: column; /* Stack sections vertically */
-    gap: 3rem; /* Spacing between sections */
+    flex-direction: column;
+    gap: 3rem; 
     background: rgba(255, 255, 255, 0.05);
     border: 2px solid var(--pink);
     padding: 2rem;
@@ -184,20 +169,20 @@ main {
 
   .section {
     display: flex;
-    flex-direction: column; /* Stack heading and articles vertically */
+    flex-direction: column; 
     gap: 1rem;
   }
 
   .section h2 {
     font-size: 1.5rem;
-    color: var(--pink); /* Style for section headers */
+    color: var(--pink); 
     margin-bottom: 1rem;
   }
 
   .section .articles-wrapper {
     display: flex;
-    flex-wrap: wrap; /* Wrap articles to the next row if they overflow */
-    gap: 2rem; /* Spacing between articles */
+    flex-wrap: wrap;
+    gap: 2rem; 
   }
 
   .articles .article {
@@ -206,21 +191,18 @@ main {
     background: var(--navy);
     border: 2px solid var(--pink);
     padding: 1rem;
-    max-width: 250px; /* Constrain the width of articles */
-    flex: 1 1 200px; /* Allow articles to grow and wrap neatly */
+    max-width: 250px;
+    flex: 1 1 200px; 
   }
 
   .articles .article img {
-    width: 100%; /* Image will stretch to fill the container */
-    max-width: 200px; /* Prevent the image from exceeding this size */
-    height: auto; /* Maintain aspect ratio */
+    width: 100%; 
+    max-width: 200px;
+    height: auto;
     border: 2px solid var(--pink);
-    object-fit: cover; /* Crop the image if proportions exceed bounds */
+    object-fit: cover;
   }
 
-
-
-/* Gallery Section */
 .gallery {
   background: rgba(255,255,255,0.05);
   border: 2px solid var(--pink);
@@ -241,7 +223,7 @@ main {
 }
 
 .gallery-item {
-  flex: 1 1 calc(25% - 1rem); /* Each item takes up to 25% of the width minus the gap */
+  flex: 1 1 calc(25% - 1rem);
   max-width: calc(25% - 1rem);
   position: relative;
   overflow: hidden;
@@ -257,15 +239,12 @@ main {
 }
 
 .gallery-item:hover {
-  transform: scale(1.05); /* Slightly enlarge the entire item */
-}
+  transform: scale(1.05); 
 
 .gallery-item img:hover {
-  transform: scale(1.1); /* Slightly enlarge the image inside */
+  transform: scale(1.1);
 }
 
-
-/* Contributors Section */
 .contributors {
   background: rgba(255,255,255,0.05);
   border: 2px solid var(--pink);
@@ -296,7 +275,7 @@ main {
   width: 100%;
   border: 2px solid var(--pink);
   margin-bottom: 0.5rem;
-  border-radius: 50%; /* Circular images */
+  border-radius: 50%;
 }
 
 .contributor .job-title {
@@ -304,7 +283,6 @@ main {
   color: var(--pink);
 }
 
-/* Footer */
 footer {
   text-align: center;
   padding: 1rem;
@@ -316,7 +294,6 @@ footer {
   margin-top: 2rem;
 }
 
-/* Responsive adjustments */
 @media (max-width: 768px) {
   .about {
       flex-direction: column;
