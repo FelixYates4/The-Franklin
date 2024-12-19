@@ -240,6 +240,7 @@ main {
 
 .gallery-item:hover {
   transform: scale(1.05); 
+}
 
 .gallery-item img:hover {
   transform: scale(1.1);
