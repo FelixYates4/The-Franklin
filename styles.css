@@ -14,6 +14,10 @@ a {
   color: inherit;
 }
 
+sub {
+  font-size: 15px; /* Change to desired size */
+}
+
 /* Color Variables */
 :root {
   --navy: #102040;       /* Updated shade of navy */
