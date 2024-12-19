@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">    
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Franklin - WLFS Newspaper</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <img class="logo" src="images/wlfs_logo.png" alt="WLFS logo">
+        
+        <div class="title-container">
+          <h1>The Franklin</h1>
+          <h2>WLFS newspaper</h2>
+        </div>
+        
+        <button aria-label="Toggle menu" class="menu-btn" onclick="toggleMenu()"></button>
+        
+        <nav class="menu" id="dropdownMenu">
+          <a href="#about">About</a>
+          <a href="#gallery">Gallery</a>
+          <a href="#articles">Articles</a>
+          <a href="#contributors">Contributors</a>
+        </nav>
+      </header>
+
+  <main>
+    <div class="main-body">
+
+        <div class="about" id="about">
+            <div class="about-img">
+                <img src="images/WLFS Franklin House.jpg" alt="school building">
+            </div>
+
+            <div class="about-txt">
+                <h3>About</h3>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sollicitudin condimentum nibh, ac commodo nisi. Nulla et dictum purus. In sagittis ex eget sollicitudin varius. Sed in urna odio. Aenean eget feugiat mauris. Nulla iaculis dolor ligula, eu molestie erat tincidunt a. Sed dapibus eleifend ante, id elementum massa dictum in. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quis diam nec dui tempor posuere nec nec lacus. Aenean aliquet vel ipsum nec pharetra. Quisque vitae nisl laoreet, placerat magna ac, facilisis urna. Morbi eu sem diam. Sed sed dui vel elit volutpat auctor. Sed tincidunt ante ut odio aliquam sodales vitae sit amet ex. Pellentesque tristique urna id sem gravida viverra. Nulla eu purus luctus, facilisis sem sit amet, dapibus lorem.
+                </p>
+            </div>
+        </div>
+
+        <div class="articles" id="articles">
+            <!-- Politics Section -->
+            <section class="section">
+                <h2>Politics</h2>
+                <div class="articles-wrapper">
+                    <div class="article">
+                        <a href="articles/A reflection of Keir Starmer's first 150 (or so) days in power2.pdf">
+                            <div class="img">
+                                <img src="images/Starmer.jpg" alt="Starmer">
+                            </div>
+                            <div class="description">
+                                <p>A reflection of Keir Starmer's first 150 (or so) days in power - by Daniel Williams</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="article">
+                        <a href="articles/Starmers bold blueprints1.pdf">
+                            <div class="img">
+                                <img src="images/keir-starmer.avif" alt="Starmer">
+                            </div>
+                            <div class="description">
+                                <p>Starmers' Bold Blueprints - by Michal Peters-Osei</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="article">
+                        <a href="articles/What will day one of Trumps presidency look like.pdf">
+                            <div class="img">
+                                <img src="images/Trump.jpg" alt="Trump">
+                            </div>
+                            <div class="description">
+                                <p>What will Day 1 of Trump's Presidency look like? - by Sacha VodegelMatzen</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="article">
+                        <a href="articles/Global Politics1.pdf">
+                            <div class="img">
+                                <img src="images/placeholder-image.png" alt="global politics image">
+                            </div>
+                            <div class="description">
+                                <p>Global Politics - Anonymous</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </section>
+        
+            <!-- Science and Technology Section -->
+            <section class="section">
+                <h2>Science and Technology</h2>
+                <div class="articles-wrapper">
+                    <div class="article">
+                        <a href="articles/Self driving cars.pdf">
+                            <div class="img">
+                                <img src="images/Self - driving car.jpg" alt="self driving car">
+                            </div>
+                            <div class="description">
+                                <p>Self Driving Cars; The Future of Technology? - by Molly Byrne</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="article">
+                        <a href="articles/Satellite Building Aiming for the Skies2.pdf">
+                            <div class="img">
+                                <img src="images/placeholder-image.png" alt="satelite image">
+                            </div>
+                            <div class="description">
+                                <p>Satellite Building: Aiming for the Skies - by Malachi Akyea-Mensah</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </section>
+        
+            <!-- Reviews Section -->
+            <section class="section">
+                <h2>Reviews</h2>
+                <div class="articles-wrapper">
+                    <div class="article">
+                        <a href="articles/Great British Bake Off.pdf">
+                            <div class="img">
+                                <img src="images/Great British Bake Off.jpg" alt="bake off">
+                            </div>
+                            <div class="description">
+                                <p>On your marks. Get set. Bake! - by Miriam Ilderton</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="article">
+                        <a href="articles/The Perks of Being a Wallflower1.pdf">
+                            <div class="img">
+                                <img src="images/Perks of being a wallflower.jpg" alt="wallflower">
+                            </div>
+                            <div class="description">
+                                <p>The perks of being a wallflower - by Keana Acorn</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </section>
+        
+            <!-- Sports Section -->
+            <section class="section">
+                <h2>Sports</h2>
+                <div class="articles-wrapper">
+                    <div class="article">
+                        <a href="articles/Tuchel or not to Tuchel  that is the question.pdf">
+                            <div class="img">
+                                <img src="images/Tuchel.jpg" alt="Tuchel">
+                            </div>
+                            <div class="description">
+                                <p>Tuchel or not to Tuchel - by Nadal Hanif</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </section>
+        </div>
+        
+               
+
+        <div class="gallery" id="gallery">
+            <h3>Gallery</h3>
+            <div class="gallery-box">
+              <div class="gallery-item"><img src="images/WhatsApp Image 2024-12-18 at 23.39.13 (1).jpeg" alt="Gallery image 1"></div>
+              <div class="gallery-item"><img src="images/WhatsApp Image 2024-12-18 at 23.39.13 (2).jpeg" alt="Gallery image 2"></div>
+              <div class="gallery-item"><img src="images/WhatsApp Image 2024-12-18 at 23.39.13 (3).jpeg" alt="Gallery image 3"></div>
+              <div class="gallery-item"><img src="images/WhatsApp Image 2024-12-18 at 23.39.13.jpeg" alt="Gallery image 4"></div>
+            </div>
+        </div>          
+    
+        <div class="contributors" id="contributors">
+            <h3>Contributors</h3>
+            <div class="contributors-list">
+                <div class="contributor">
+                    <img src="https://via.placeholder.com/150" alt="Contributor 1">
+                    <p class="job-title">Editor</p>
+                </div>
+                <div class="contributor">
+                    <img src="https://via.placeholder.com/150" alt="Contributor 2">
+                    <p class="job-title">Writer</p>
+                </div>
+                <div class="contributor">
+                    <img src="https://via.placeholder.com/150" alt="Contributor 3">
+                    <p class="job-title">Photographer</p>
+                </div>
+                <div class="contributor">
+                    <img src="https://via.placeholder.com/150" alt="Contributor 4">
+                    <p class="job-title">Designer</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+  </main>
+
+  <footer>
+    <p>Contact us at: email@wlfs.org</p>
+  </footer>
+
+  <script src="scripts.js"></script>
+</body>
+</html>
